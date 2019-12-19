@@ -4,6 +4,9 @@ public class Product {
    String name;
    float price;
 
+    public Product() {
+
+    }
     public Product(String name, float price) {
         this.name = name;
         this.price = price;
@@ -23,5 +26,13 @@ public class Product {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
